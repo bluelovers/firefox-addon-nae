@@ -1,0 +1,7 @@
+<!ENTITY popup-nukeanything-do-nuke "Remove this object">
+<!ENTITY popup-nukeanything-undo-nuke "Undo last Remove">
+<!ENTITY popup-nukeanything-do-nuke-selection "Remove selection">
+<!ENTITY popup-nukeanything-do-leave-selection "Remove everything else">
+<!ENTITY popup-nukeanything-do-nuke-frame "Remove this frame">
+
+

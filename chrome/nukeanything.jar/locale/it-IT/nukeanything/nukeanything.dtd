@@ -1,0 +1,5 @@
+<!ENTITY popup-nukeanything-do-nuke "Elimina questo oggetto">
+<!ENTITY popup-nukeanything-undo-nuke "Annulla l'ultima modifica">
+<!ENTITY popup-nukeanything-do-nuke-selection "Elimina selezione">
+<!ENTITY popup-nukeanything-do-leave-selection "Elimina tutto il resto">
+<!ENTITY popup-nukeanything-do-nuke-frame "Elimina questo riquadro">

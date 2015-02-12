@@ -1,0 +1,7 @@
+<!ENTITY popup-nukeanything-do-nuke "Effacer cet objet">
+<!ENTITY popup-nukeanything-undo-nuke "Annuler le dernier effacement">
+<!ENTITY popup-nukeanything-do-nuke-selection "Effacer cette sélection">
+<!ENTITY popup-nukeanything-do-leave-selection "Effacer tout sauf cette sélection">
+<!ENTITY popup-nukeanything-do-nuke-frame "Effacer ce cadre">
+
+

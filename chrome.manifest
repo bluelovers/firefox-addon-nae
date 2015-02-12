@@ -1,0 +1,13 @@
+
+overlay	chrome://navigator/content/navigatorOverlay.xul	chrome://nukeanything/content/nukeanythingOverlay.xul
+overlay	chrome://browser/content/browser.xul	chrome://nukeanything/content/nukeanythingOverlay.xul
+content	nukeanything	chrome/nukeanything.jar/content/nukeanything/
+
+skin	nukeanything	classic/1.0	chrome/nukeanything.jar/skin/
+
+locale	nukeanything	en-US	chrome/nukeanything.jar/locale/en-US/nukeanything/
+locale	nukeanything	hu-HU	chrome/nukeanything.jar/locale/hu-HU/nukeanything/
+locale	nukeanything	fr-FR	chrome/nukeanything.jar/locale/fr-FR/nukeanything/
+locale	nukeanything	it-IT	chrome/nukeanything.jar/locale/it-IT/nukeanything/
+locale	nukeanything	da-DK	chrome/nukeanything.jar/locale/da-DK/nukeanything/
+locale	nukeanything	de-DE	chrome/nukeanything.jar/locale/de-DE/nukeanything/

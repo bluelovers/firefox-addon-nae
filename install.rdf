@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+ <Description about="urn:mozilla:install-manifest">
+   <em:id>{1ced4832-f06e-413f-aa14-9eb63ad40ace}</em:id>
+   <em:name>Nuke Anything Enhanced</em:name>
+   <em:version>1.1</em:version>
+   <em:creator>Patrick Abi Salloum</em:creator>
+   <em:contributor>Ted Mielczarek (original dev)</em:contributor>
+   <em:translator>Mikes Kaszmán István (Magyar)</em:translator>
+   <em:translator>Jean-Bernard Marcon (Français)</em:translator>
+   <em:translator>Andrew (Italiano)</em:translator>
+   <em:translator>Jørgen Rasmussen (Dansk)</em:translator>
+   <em:translator>Ralf Simon (Deutsch)</em:translator>
+   <em:description>Allows hiding of almost anything via context menu</em:description>
+   <em:iconURL>chrome://nukeanything/skin/NukeAnything.png</em:iconURL>
+   <em:file>
+     <Description about="urn:mozilla:extension:file:nukeanything.jar">
+       <em:package>content/nukeanything/</em:package>
+       <em:locale>locale/en-US/nukeanything/</em:locale>
+       <em:locale>locale/de-DE/nukeanything/</em:locale>
+       <em:locale>locale/da-DK/nukeanything/</em:locale>
+       <em:locale>locale/hu-HU/nukeanything/</em:locale>
+       <em:locale>locale/fr-FR/nukeanything/</em:locale>
+       <em:locale>locale/it-IT/nukeanything/</em:locale>
+       <em:skin>skin/</em:skin>
+     </Description>
+   </em:file>
+	<!-- Firefox -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+       <em:minVersion>2.0</em:minVersion>
+       <em:maxVersion>36.0</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+	<!-- SeaMonkey -->
+	<em:targetApplication>
+		<Description>
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>1.1</em:minVersion>
+		<em:maxVersion>2.1a1pre</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+ </Description>
+</RDF>
