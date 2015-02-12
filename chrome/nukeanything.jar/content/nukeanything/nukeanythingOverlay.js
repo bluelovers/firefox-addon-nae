@@ -18,6 +18,7 @@
  */
 var NukeAnything = {
 	RemovedObjects: Array(),
+	hiddenObjects: Array(),
 	BlinkId: Array(),
 	blink_style: Object,
 	init: function()
@@ -169,6 +170,8 @@ var NukeAnything = {
 						'display': obj.style.display
 					};
 					obj.style.display = "none";
+
+					NukeAnything.removeElem(obj);
 				}
 			}
 		}
@@ -222,6 +225,8 @@ var NukeAnything = {
 				if (delete_node.nodeType == 1)
 				{
 					delete_node.style.display = "none";
+
+					NukeAnything.removeElem(delete_node);
 				}
 				else if (delete_node.nodeType == 3)
 				{
@@ -241,6 +246,8 @@ var NukeAnything = {
 				if (delete_node.nodeType == 1)
 				{
 					delete_node.style.display = "none";
+
+					NukeAnything.removeElem(delete_node);
 				}
 				else if (delete_node.nodeType == 3)
 				{
@@ -252,6 +259,8 @@ var NukeAnything = {
 		}
 		current_node.style.backgroundImage = "none";
 		current_node.parentNode.style.backgroundImage = "none";
+
+		NukeAnything.removeHiddenObjects();
 	},
 
 	checkFrames: function(frames, framedoc)
@@ -270,6 +279,9 @@ var NukeAnything = {
 					'display': frames[f].style.display
 				};
 				frames[f].style.display = "none";
+
+				NukeAnything.removeElem(frames[f]);
+
 				return true;
 			}
 			// check to see if this document has frames in it
@@ -319,7 +331,39 @@ var NukeAnything = {
 			}
 		}
 		return false;
-	}
+	},
+
+	removeElem: function(elem)
+	{
+		try
+		{
+			NukeAnything.hiddenObjects.push(elem);
+
+			//elem.parentNode.removeChild(elem);
+		}
+		catch(e)
+		{}
+	},
+
+	removeHiddenObjects: function(elem)
+	{
+		var i;
+		for (i in NukeAnything.hiddenObjects)
+		{
+			var elem = NukeAnything.hiddenObjects[i];
+
+			try
+			{
+				if (elem)
+				{
+					elem.remove();
+				}
+			}
+			catch(e)
+			{}
+		}
+	},
+
 }
 
 // do the init on load
